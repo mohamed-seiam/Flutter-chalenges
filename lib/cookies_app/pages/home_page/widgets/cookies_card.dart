@@ -12,7 +12,7 @@ class CookiesCard extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     var cookieSize = size.height * 0.16;
-    var cardSize = size.height * 0.18;
+    var cardSize = size.height * 0.19;
     return Stack(
       clipBehavior: Clip.none,
       children: [

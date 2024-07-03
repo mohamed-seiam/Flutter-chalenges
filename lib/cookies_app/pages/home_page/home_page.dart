@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_challenges/cookies_app/pages/home_page/widgets/cart.dart';
 import 'package:flutter_challenges/cookies_app/pages/home_page/widgets/cookies_bar.dart';
 import 'package:flutter_challenges/cookies_app/pages/home_page/widgets/cookies_card.dart';
+import 'package:flutter_challenges/cookies_app/pages/home_page/widgets/horizontal_cokkie_card.dart';
+import 'package:flutter_challenges/cookies_app/pages/home_page/widgets/offers_bar.dart';
 import 'package:flutter_challenges/cookies_app/pages/home_page/widgets/personal_info.dart';
 import 'package:flutter_challenges/cookies_app/styles/colors.dart';
 
@@ -34,7 +36,7 @@ class HomePage extends StatelessWidget {
               ),
               const CookiesBar(),
               SizedBox(
-                height: size.height * 0.12,
+                height: size.height * 0.13,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -44,6 +46,8 @@ class HomePage extends StatelessWidget {
                         ))
                     .toList(),
               ),
+              const OffersBar(),
+              const HorizontalCookieCard(),
             ],
           ),
         ),
